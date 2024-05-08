@@ -1,0 +1,109 @@
+@font-face {
+  font-family: 'undertale';
+  font-display: swap;
+  src: url(undertale-deltarune-text-font-extended.ttf);
+
+}
+
+body {
+  font-family: 'Roboto';
+  margin: 0;
+  padding: 0;
+  background-color: var(--couleur_fond1);
+  color: var(--couleur_texte);
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-content: center;
+
+  --couleur_texte: #ffffff;
+  --couleur_fond1: #000000;
+  --couleur_fond2: #111111;
+  --couleur_fond3: #222222;
+  --primary: #ffffff;
+
+  --hauteur_header:min(60px,12vw);
+  --hauteur_message_et_bouton_envoyer: min(15vw,75px);
+  --largeur_bouton_envoyer: min(20vw,300px);
+  --rayon_bordure1: min(8vw,40px);
+  --rayon_bordure2: min(5vw,25px);
+  --padding1: min(20px,4vw);
+  --largeur_bloc:min(1000px,calc(100vw - (4* var(--padding1))));
+  font-size: min(4vw,25px);
+  --c1: #ff0000;
+}
+
+.header {
+  font-family: 'undertale';
+  font-weight: 100;
+  background-color: var(--couleur_fond1);
+ 
+  color: var(--couleur_texte); /* Couleur du texte */
+  font-size: 1.5em;
+  text-align: center;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  z-index: 1000;
+  border-bottom: solid min(0.5vw, 1px) #222;
+  height: var(--hauteur_header);
+  display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+
+    .contenu-header {
+      width:min(90vw,1000px);
+      text-align: left;
+      display: flex;
+      align-items: center;
+    }
+  
+
+    .coeur{
+      height:min(55px,8vw);
+      width: min(55px,8vw);
+      margin-right: min(20px,2vw);
+    }
+
+    .bloc1{
+      display: flex;
+      background-color: var(--couleur_fond2);
+      width:var(--largeur_bloc);
+      border-radius: var(--rayon_bordure1);
+      padding: var(--padding1);
+      justify-content: center;
+      align-items: center;
+      margin-bottom: var(--padding1);
+      margin-top: calc(var(--hauteur_header) + var(--padding1));
+    }
+
+    .tableau-index {
+      display: flex;
+      justify-content: center; /* Aligner les boutons horizontalement au centre */
+      width:calc(var(--largeur_bloc)+20px);
+    }
+
+ 
+
+   
+
+.boutonIndex{
+  height:calc(var(--hauteur_message_et_bouton_envoyer));
+  width: 100%;
+  background: linear-gradient(to right, #9900ff,#ff0000);
+    background-position: 100% 0;
+  transition: background-position 0.5s ease;
+  border-radius: var(--rayon_bordure2);
+  border: #fff min(1vw, 3px) solid;
+  font-size: min(4vw,25px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-align:center;
+  text-decoration: none;
+  margin:var(--padding1);
+  padding:0;
+}

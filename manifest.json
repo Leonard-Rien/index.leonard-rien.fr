@@ -1,0 +1,23 @@
+{
+  "short_name": "Léonard RIen",
+  "name": "Léonard-Rien",
+  "icons": [
+    {
+      "src": "logo-coeur512.png",
+      "type": "image/png",
+      "sizes": "512x512",
+      "purpose": "maskable"
+    },
+      {
+      "src": "logo-coeur192.png",
+      "type": "image/png",
+      "sizes": "192x192",
+      "purpose": "any"
+    }
+      
+  ],
+  "start_url": ".",
+  "display": "standalone",
+  "theme_color": "#000000",
+  "background_color": "#ffffff"
+}
