@@ -67,7 +67,7 @@ body {
       margin-right: min(20px,2vw);
     }
 
-    .bloc1{
+    .bloc{
       display: flex;
       background-color: var(--couleur_fond2);
       width:var(--largeur_bloc);
@@ -76,6 +76,10 @@ body {
       justify-content: center;
       align-items: center;
       margin-bottom: var(--padding1);
+      margin-top: var(--padding1);
+    }
+
+    .bloc1{
       margin-top: calc(var(--hauteur_header) + var(--padding1));
     }
 
@@ -106,4 +110,98 @@ body {
   text-decoration: none;
   margin:var(--padding1);
   padding:0;
+}
+
+
+footer {
+  background-color: #000000;
+  border-top: 1px solid #222;
+  color: #fff;
+  text-align: center;
+  padding: 0;
+  margin:0;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-content: center;
+}
+
+
+.box {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+ /* min-height: 100vh;*/
+ bottom: 100px;
+}
+
+
+.instagram {
+  position: absolute;
+  --logo:50px;
+  width: var(--logo);
+  height: var(--logo);
+  background: radial-gradient(circle at 30% 110%,
+          #ffdb8b 0%,
+          #ee653d 25%,
+          #d42e81 50%,
+          #a237b6 75%,
+          #3e57bc 100%);
+  border-radius: calc(var(--logo)/4.32);
+  box-shadow: 0px 15px 40px 1px rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 200px;
+}
+
+
+
+.instagram::after {
+  content: "";
+  position: absolute;
+  right: calc(var(--logo)/(160/22));
+  right: calc(var(--logo)/(160/22));
+  border: calc(var(--logo)/(160/7)) solid #fff;
+  height: calc(var(--logo)/1.6);
+  width: calc(var(--logo)/1.6);
+  border-radius: calc(var(--logo)/(160/25));
+}
+
+.instagram::before {
+  content: "";
+  position: absolute;
+  top: calc(var(--logo)/(160/49));
+  right: calc(var(--logo)/(160/49));
+  border: calc(var(--logo)/(160/8)) solid #fff;
+  height: calc(var(--logo)/(160/43));
+  width: calc(var(--logo)/(160/45));
+  border-radius: 50%;
+}
+
+.point-insta{
+  position: absolute;
+  display: block;
+  top: calc(var(--logo)/(160/40));;
+  right: calc(var(--logo)/(160/40));
+  width: calc(var(--logo)/(160/12));
+  height: calc(var(--logo)/(160/12));
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+.octicon-mark-github{
+ 
+  filter: invert();
+}
+
+.github{
+  margin-right: 200px;
+  height: 50px;
 }
